@@ -9,11 +9,11 @@ if (mysqli_connect_errno($conn))
 
 
 $name = $_POST['name'];
-$comment = $_POST['price'];
-$link = $_POST['amount'];
-$Totlo = $_POST['amount']*$_POST['price'];
+$price = $_POST['price'];
+$amount = $_POST['amount'];
+$total = $_POST['amount']*$_POST['price'];
 
-$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$name', '$comment', '$link')";
+$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$name', '$price', '$amount', '$total')";
 
 
 if (mysqli_query($conn, $sql)) {
