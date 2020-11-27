@@ -15,9 +15,9 @@
         ชื่อสินค้า:<br>
         <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter Name"> <br>
         ราคาต่อหน่วย:<br>
-        <input type="text" class="form-control" name = "comment" id="idComment" placeholder="Enter Price"><br>  
+        <input type="text" class="form-control" name = "price" id="idPrice" placeholder="Enter Price"><br>  
         Link:<br>
-        <input type="text" name = "link" class="form-control" id="idLink" placeholder="Enter Amount"> <br><br>
+        <input type="text" name = "amount" class="form-control" id="idAmount" placeholder="Enter Amount"> <br><br>
         <input type="submit" name="btn_insert" class="btn btn-success" id="commentBtn" value="Insert" >
         <a href="show.php" class="btn btn-danger">Cancel</a>
     </form>
