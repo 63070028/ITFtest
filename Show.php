@@ -22,24 +22,23 @@ $res = mysqli_query($conn, 'SELECT * FROM book');
 <div class="container">
   <table class="table table-dark table-striped" width="600" border="1">
     <tr>
-      <th width="100"> <div align="center">Name</div></th>
-      <th width="200"> <div align="center">Comment </div></th>
-      <th width="100"> <div align="center">Link </div></th>
-      <th width="100"> <div align="center">Action </div></th>
+      <th width="100"> <div align="center">ชื่อสินค้า</div></th>
+      <th width="200"> <div align="center">ราคาต่อหน่วย </div></th>
+      <th width="100"> <div align="center">จำนวน </div></th>
+      <th width="100"> <div align="center">ราคาทั้งหมด </div></th>
     </tr>
   <?php
   while($Result = mysqli_fetch_array($res))
   {
   ?>
     <tr>
-      <td><?php echo $Result['ชื่อสินค้า'];?></div></td>
-      <td><?php echo $Result['ราคาต่อหน่วย'];?></td>
-      <td><?php echo $Result['จำนวน'];?></td>
-      <td><?php echo $Result['ราคาทั้งหมด'];?></td>
+      <td><?php echo $Result['Product'];?></div></td>
+      <td><?php echo $Result['Price'];?></td>
+      <td><?php echo $Result['Amount'];?></td>
+      <td><?php echo $Result['Total'];?></td>
       <td> <div align="center">
               <div class="row">
                   <div class="card-body"> 
-                    <a href="edit.php?update_id=<?php echo $Result['ID']; ?>" class="btn btn-warning">Edit</a>
                     <a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">Delete</a>
                   </div>
               </div>
